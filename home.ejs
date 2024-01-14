@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Multiplication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row vh-100 w-auto">
+            <div class="col h-100 d-flex align-items-center justify-content-center">
+                <div>
+                    <form action="/" class="form text-center" method="post">
+                        <div class="form-floating m-2">
+                            <input type="number" id="val1" name="variableOne" class="form-control" placeholder="First Value" value="<% typeof variableOne != 'undefine'? variableOne: '' %>">
+                            <label for="val1">First Value</label>
+                        </div>
+                        <div>
+                            <span>=</span>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="number" id="val2" name="variableTwo" class="form-control" placeholder="Second Value">
+                            <label for="val2">Second Value</label>
+                        </div>
+                        <div>
+                            <span>How ABout</span>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="number" id="val3" name="variableThree" class="form-control" placeholder="Third Value">
+                            <label for="val3">Third Value</label>
+                        </div>
+                        <%= error %>
+                        <div class="">
+                            <button type="submit" class="m-2">?</button>
+                        </div>
+                    </form>
+                    <div class="output m-2">
+                         <span>Output: <%= output %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
